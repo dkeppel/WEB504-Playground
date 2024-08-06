@@ -236,3 +236,36 @@ footer {
     color: #8b8e2f;
     transition: all 0.5s ease 0s;
 }
+
+@media only screen and (max-width: 1440px) {
+    section {
+        max-width: 95%;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    header {
+        padding: 20px 0px;
+    }
+    #logo {
+        padding: 0px;
+    }
+    input[type="checkbox"] {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+        background: none;
+    }
+    input[type="checkbox"]:focus {
+        background: none;
+    }
+    label {
+        float: right;
+        padding: 8px 0px;
+        display: inline-block;
+        cursor: pointer;
+    }
+    input[type="checkbox"]:checked ~ nav {
+        display: block;
+    }
+ }
