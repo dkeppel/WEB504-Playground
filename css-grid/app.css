@@ -1,0 +1,10 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "nav section aside"
+        "footer footer footer";
+    grid-template-rows: ;
+    grid-template-columns: ;
+}
