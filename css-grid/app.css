@@ -5,6 +5,38 @@ body {
         "header header header"
         "nav section aside"
         "footer footer footer";
-    grid-template-rows: ;
-    grid-template-columns: ;
+    grid-template-rows: 80px 1fr 50px;
+    grid-template-columns: 15% 1fr 18%;
+    gap: 5px;
+    height: 100vh;
+    margin: 10px;
+}
+
+header {
+    background-color: blue;
+    grid-area: header;    
+}
+
+nav {
+    background-color: blueviolet;
+    grid-area: nav;
+}
+
+section {
+    background-color: pink;
+    grid-area: section;
+}
+
+aside {
+    background-color: #c9c9c9;
+    grid-area: aside;
+}
+
+footer {
+    background-color: #707070;
+    grid-area: footer;
+}
+
+header, nav, section, aside, footer {
+    padding: 5px;
 }
