@@ -260,7 +260,7 @@ footer {
         background: none;
     }
     label {
-        float: right;
+        /* float: right; */
         padding: 8px 0px;
         display: inline-block;
         cursor: pointer;
@@ -268,4 +268,67 @@ footer {
     input[type="checkbox"]:checked ~ nav {
         display: block;
     }
+    nav {
+        display: none;
+        position: absolute;
+        right: 0px;
+        top: 53px;
+        background-color: #002e5b;
+        padding: 0px;
+        z-index: 99px;
+    }
+    nav ul {
+        width: auto;
+    }
+    nav ul li {
+        float: none;
+        padding: 0px;
+        width: 100%;
+        display: table;
+    }
+    nav ul li a {
+        color: #fff;
+        font-size: 15px;
+        padding: 10px 20px;
+        display: block;
+        border-bottom: 10px solid #8b8e2f;
+    }
+    nav ul li a i {
+        color: #fd8428;
+        padding-right: 13px; 
+    }
  }
+
+ @media only screen and (max-width: 980px) {
+    .content {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    h1 {
+        padding: 25px 0px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    section {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    h1 {
+        font-size: 20px;
+    }
+    label {
+        padding: 5px 0px;
+    }
+    #logo {
+        font-size: 20px;
+    }
+    nav {
+        top: 47px;
+    }
+}
+
